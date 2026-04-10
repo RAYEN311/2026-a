@@ -1,0 +1,127 @@
+.right_container {
+    height: calc(100vh - var(--top-main));
+    /* background-color:var(--bg_col) ; */
+    background-color: white;
+    position: fixed;
+    right: 0;
+    transform: translate( var(--right_slid));
+    top: calc(100vh - calc(100vh - var(--top-main)));
+    overflow-y: scroll;
+    overflow-x: hidden;
+    transition: transform 0.5s ease;
+    z-index: 100;
+}
+
+.right_container .img_devidor {
+    width: 100%;
+    height: 350px;
+    background-size: contain;
+    filter: blur(10px) brightness(0.3);
+}
+.right_container .img_devidor div {
+    background-color: rgba(0, 0, 0, 0.438);
+    height: 150%;
+    width: 150%;
+    transform: translate(-25%,-25%);
+}
+
+.right_container .devidor {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+}
+
+.right_container .devidor img {
+    max-height: 350px;
+    /* max-width: 350px; */
+    object-fit: cover;
+    user-select: none;
+}
+
+.right_container .to_top {
+    border-top: 1px solid gray;
+    background-color: white;
+    position: relative;
+    padding: 20px 30px;
+    z-index: 1000;
+    user-select: none;
+}
+
+.right_container .to_top .sr_title {
+    font-weight: 500!important;
+    font-size: 24px;
+}
+
+.right_container .to_top .sr_disc {
+    font-weight: 300!important;
+}
+.devidor .circlecontainer .circle{
+    user-select: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 20%;
+    background-color: var(--primary_transp);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+    
+}
+.devidor .circlecontainer .circle:active{
+    background-color: var(--primary_tr);
+    border: 1px solid black;
+    scale: 0.9;
+}
+.devidor .circlecontainer{
+position: absolute;
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: calc( var(--right_slid) - 68px);
+}
+.left-slid-circ{
+    transform: rotate(180deg)!important;
+}
+.disable{
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+    background-color: #00000011;
+    border-radius: 50%;
+    transform: translate(20px,20px);
+    cursor: pointer ;
+    font-weight: 500;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 37px;
+    height: 37px;
+}
+@media(min-width:700px){
+    .right_container {
+        width: var(--right_slid);
+    }
+}
+@media(max-width:500px){
+    .right_container .devidor img {
+        height: 250px;
+
+    }
+    .right_container .img_devidor {
+        height: 250px;
+    }
+}
+/* 
+<span className="sell_title">{title}</span>
+<span className="sell_disc">{disc}</span>
+<a className="sell_msg" href={msg_link}>message</a>
+<span className="sell_price">{price}</span>
+<button onClick={disable}>
+    disable
+</button>
+ */

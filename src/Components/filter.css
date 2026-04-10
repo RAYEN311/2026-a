@@ -1,0 +1,142 @@
+/* 13 caractere is the max of the transitions by rayen :) */
+
+:root{
+  --letterfill-speed0 : 1 ;
+  --letterfill-speed1 : 2 ;
+  --letterfill-speed2 : 3 ;
+  --letterfill-speed3 : 4 ;
+  --letterfill-speed4 : 5 ;
+  --letterfill-speed5 : 6 ;
+  --letterfill-speed6 : 7 ;
+  --letterfill-speed7 : 8 ;
+  --letterfill-speed8 : 9 ;
+  --letterfill-speed9 : 10 ;
+  --letterfill-speed10 : 11 ;
+  --letterfill-speed11 : 12 ;
+  --letterfill-speed12 : 13 ;
+}
+
+
+.fillter_forum{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5px;
+}
+
+.wave-group {
+    position: relative;
+    margin: 5px;
+    margin-top: 20px;
+  }
+  
+  .wave-group .input {
+    font-size: 12px;
+    padding: 5px 5px 10px 5px;
+    display: block;
+    --inp_fill_global_width: 100%;
+    width: var(--inp_fill_global_width);
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+  }
+  
+  .wave-group .input:focus {
+    outline: none;
+  }
+  
+  .wave-group .label {
+    color: #999;
+    font-size: x-small;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    display: flex;
+  }
+  
+  .wave-group .label-char0 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed0) * .05s);
+  }
+  .wave-group .label-char1 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed1) * .05s);
+  }
+  .wave-group .label-char2 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed2) * .05s);
+  }
+  .wave-group .label-char3 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed3) * .05s);
+  }
+  .wave-group .label-char4 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed4) * .05s);
+  }
+  .wave-group .label-char5 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed5) * .05s);
+  }
+  .wave-group .label-char6 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed6) * .05s);
+  }
+  .wave-group .label-char7 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed7) * .05s);
+  }
+  .wave-group .label-char8 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed8) * .05s);
+  }
+  .wave-group .label-char9 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed9) * .05s);
+  }
+  .wave-group .label-char10 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed10) * .05s);
+  }
+  .wave-group .label-char11 {
+    transition: 0.2s ease all;
+    transition-delay: calc(var(--letterfill-speed11) * .05s);
+  }
+  
+  .wave-group .input:focus ~ label .label-char {
+    transform: translateY(-20px);
+    font-size: 10px;
+    color: #5264AE;
+  }
+  
+  .wave-group .bar {
+    position: relative;
+    display: block;
+    width: var(--inp_fill_global_width);
+  }
+  
+  .wave-group .bar:before,.wave-group .bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: #5264AE;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+  }
+  
+  .wave-group .bar:before {
+    left: 50%;
+  }
+  
+  .wave-group .bar:after {
+    right: 50%;
+  }
+  
+  .wave-group .input:focus ~ .bar:before,
+  .wave-group .input:focus ~ .bar:after {
+    width: var(--inp_fill_global_width);
+  }

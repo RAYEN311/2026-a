@@ -1,0 +1,60 @@
+:root{
+    --buy_box_width: 47vw;
+    --buy_box_height: 47vw;
+}
+.buy_box{
+    height: var(--buy_box_height);
+    width: var(--buy_box_width);
+    margin-bottom: 10vw;
+    border-radius: 3px;
+    cursor: pointer;
+    display: block;
+}
+.buy_box img , .img_wait_buy{
+    height:100% ;
+    width:100% ;
+    object-fit: cover;
+    border-radius: 3px;
+}
+.buy_box .flexxi{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-direction: row;
+padding: 0 5px 0 5px;
+}
+
+.buy_box .buy_title , .buy_box .buy_price{
+    font-size: 14px;
+    font-weight: 400;
+}
+.buy_box .buy_price{
+    font-weight: 500;
+}
+
+.buy_box .buy_disc{
+display: none;
+}
+.buy_box .buy_msg{
+    display: none; 
+}
+@media (min-width:950px) {
+    :root{
+        --buy_box_width: calc( var(--main_width) / 4.2);
+        --buy_box_height: calc( var(--main_width) / 4.1);
+    }
+    .buy_box img{
+        border-radius: 2px;
+    }
+    .buy_box {
+        margin-bottom: 6vh;
+    }
+}
+@media (max-width:950px) {
+    .buy_box .buy_title{
+
+    }
+    .buy_box{
+
+    }
+}

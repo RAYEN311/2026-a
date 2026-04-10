@@ -1,0 +1,14 @@
+.min_max_indicator{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+}
+.min_max_indicator h6{
+    background-color: whitesmoke;
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}

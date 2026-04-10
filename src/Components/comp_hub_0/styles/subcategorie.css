@@ -1,0 +1,38 @@
+.subcategories {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.subcategories .subcategorie {
+    margin: 8px auto 8px 18px;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: auto;
+    width: calc(100% - 55px);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subcategories .subcategorie .mean_container {
+    display: flex;
+    align-items: center;
+}
+
+.subcategories .subcategorie .mean_container svg {
+    margin-right: 10px;
+}
+
+.subcategories .subcategorie:hover {
+    color: white;
+    background-color: var(--burger_col);
+}
+
+.subcategories .subcategorie:active {
+    background-color: black;
+}

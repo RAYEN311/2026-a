@@ -1,0 +1,198 @@
+
+.padd_reg{
+    padding-top: 150px;
+}
+.for_login_forum div .form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    border:1px solid var(--box_shadow);
+    padding: 15px;
+    border-radius:5px;
+    box-shadow: 0 0 5px 2px var(--box_shadow);
+    width: 270px;
+    margin:auto;
+}
+.for_login_forum div .form h2{
+    color: black;
+    margin: auto;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.for_login_forum div .form .back{
+    cursor: pointer;
+    height: 26px;
+    width: 26px;
+    position: absolute;
+    border-radius: 50%;
+}
+.for_login_forum div .form svg:hover{
+    background-color: var(--box_shadow);
+    color: black;
+}
+.for_login_forum div .form input{
+    height: 35px;
+    width: 260px;
+    border-radius: 5px;
+    border: 1px solid var(--scrool_col);
+    background-color: rgba(200, 200, 200, 0.064);
+}
+.for_login_forum div .form span{
+    width: 270px;
+    color: var(--burger_col);
+    font-weight: 500;
+    font-size: var(--font-PARA-SIZE);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+}
+.for_login_forum div .form .upper_spacing{
+    margin-top: 15px;
+}
+.for_login_forum div .form input:focus{
+    border: none;
+    box-shadow: 0 0 5px 2px var(--box_shadow);
+}
+.for_login_forum div .seprate_horizontal{
+    margin: 15px 0 10px 0;
+}
+.for_login_forum div .vertical-spacing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.for_login_forum div .vertical-spacing a{
+    width: 270px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--box_shadow);
+    border-radius: 5px;
+}
+.empty_sp_v{
+    height: 50px;
+    width: 50px;
+}
+.adj-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.adj-container div , .rest-feild div{
+    width: 270px;
+}
+.hide-pc{
+    display: flex;
+    flex-direction: column;
+}
+.hide-mob{
+    display: none;
+}
+
+
+
+@media (min-width:750px) {
+    .adj-container div , .rest-feild div{
+        width: 270px;
+    }
+    .for_login_forum div .form{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: white;
+        border:1px solid var(--box_shadow);
+        padding: 15px;
+        border-radius:5px;
+        box-shadow: 0 0 5px 2px var(--box_shadow);
+        width: 550px;
+        margin:auto;
+    }
+    .for_login_forum div .form .l-mail {
+        margin-top: 8px;
+        margin-left:34px;
+    }
+    .for_login_forum div .form .i-mail {
+        width: 480px!important ;
+        margin: auto;
+        margin-bottom: 8px;
+        transform: translate(2px);
+    }
+    .hide-pc{
+        display: none;
+    }
+    .hide-mob{
+        display: block;
+    }
+    .rest-feild{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .adj-container div , .rest-feild div{
+        width: 230px;
+        margin: 0 10px;
+    }
+    .log_inp , .reg_inp{
+        width: 230px!important;
+    }
+    .sudo_button{
+        width: 490px;
+        transform: translate(4px);
+        margin: auto;
+    }
+    .log_form{
+        width: 300px!important;
+    }
+    .log_butt{
+        width: 270px!important;
+        transform: translate(0);
+    }
+    .log_inp{
+        width: 100%!important;
+        transform: translate(-3px);
+    }
+    .for_login_forum div .form span{
+        margin: auto;
+        margin-top: 10px;
+        width: 480px;
+    }
+    .for_login_forum div .form .span_log{
+        width: 270px;
+
+    }
+}
+
+.connection-ok{
+    position: absolute;
+    top: 50px;
+    right:0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 250px;
+    height: 70px;
+    background-color: white;
+    border-radius: 3px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px 1px black;
+    border-bottom: 8px solid rgb(0, 214, 0);
+    transform: translate(100%);
+    transition: all 0.5s ease-in-out ;
+}
+.connection-reject{
+    position: absolute;
+    top: 50px;
+    right:0;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width: 250px;
+    height: 70px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 5px 1px black;
+    border-bottom: 8px solid rgb(255, 0, 0);
+    transform: translate(100%);
+}

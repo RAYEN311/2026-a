@@ -1,0 +1,18 @@
+.subcategories{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.subcategories .subcategorie{
+    margin:8px auto 8px 18px;
+    padding: 10px;
+    background-color: whitesmoke;
+    height: auto;
+    width: calc(100% - 36px);
+    border-radius: 5px;
+}
+
+.subcategories .subcategorie svg{
+    transform: rotate(-90deg);
+}

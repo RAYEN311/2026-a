@@ -1,0 +1,91 @@
+.gradient-wait {  
+    color: transparent !important;
+
+    transition: none;
+    background: linear-gradient(
+      60deg,
+      hsla(0, 0%, 82%),
+      hsla(0, 0%, 70%),
+      hsla(0, 0%, 78%),
+      hsla(0, 0%, 82%),
+      hsla(0, 0%, 70%),
+      hsla(0, 0%, 78%)
+    );
+    background-size: 300% 300%;
+    background-position: 0 50%;
+    animation: moveGradient 1s alternate infinite;
+}
+
+@keyframes moveGradient {
+  50% {
+    background-position: 100% 50%;
+  }
+}
+.mnr{
+  margin-top: 5px;
+}
+
+
+
+.imgbuywait{
+ height: 47vw!important;   
+ width: 47vw!important;
+}
+.buy_pric{
+    transform: translate(29.5vw ,calc(47vw + 15px));
+    width: 16.1vw;
+    height: 20px;
+}
+.buy_titl{
+    transform: translate(-0.6vw,calc(47vw + 15px));
+    width: 23.1vw;
+    height: 20px;
+    
+}
+
+.rent_box .gr{
+    background:linear-gradient(30deg,rgb(193, 193, 193),white );
+    width: 60vw;
+    height: 254px;
+    border-radius: 2px;
+}
+
+
+.n_im_22{
+height: 129px!important;
+}
+
+
+.rent_box .trup1{
+    transform: translateY(-1px);
+}
+
+@media(min-width:950px){
+    .imgbuywait{
+        width: calc( var(--main_width) / 4.2)!important;
+        height: calc( var(--main_width) / 4.1)!important;
+    }
+    .buy_pric{
+        transform: translate(calc( var(--main_width) / 6.6),calc(calc( var(--main_width) / 4.2) + 20px));
+        width: calc( var(--main_width) / 12.3);
+        height: 20px;
+    }
+    .buy_titl{
+        transform: translate(-5px , calc(calc( var(--main_width) / 4.2) + 20px));
+        width: calc( var(--main_width) / 8.55);
+        height: 20px;
+        
+    }
+    .rent_box .gr{
+        width: 270px;
+        height: 270px;
+    }
+    .n_im_22{
+        height: 137px!important;
+        }
+        
+    
+    
+}
+
+

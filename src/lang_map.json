@@ -1,0 +1,13 @@
+{
+    "lang1": ["Français","French"],
+    "lang2": ["Anglais","English"],
+    "ph1": ["Bienvenue chez Afari, où vous trouverez tout au même endroit : achat de pièces téléphoniques originales et de téléphones d'occasion avec garantie. Vous pouvez publier tout ce qui est applicable.","Welcome to Afari, where you can find everything in one place: original phone parts and second-hand phones with warranty. You can post anything that applies."],
+    "ph2": ["Paramètres","Settings"],
+    "ph3": ["Filtrer","Filtering"],
+    "ph4": ["Achat","Buy"],
+    "ph5": ["Vente","Sell"],
+    "ph6": ["Louer","Rent"],
+    "ph7": ["Poster une publication","Post a listing"],
+    "ph8": ["Poster une annonce","Post an ad"],
+    "ph9": ["Identifiez-vous","Login"]
+}

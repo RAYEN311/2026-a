@@ -1,0 +1,92 @@
+:root{
+    --rent_box_width: 90vw;
+    --rent_box_height: 300px;
+}
+
+.rent_box{
+    transform : translate(0 , 30px);
+    height: var(--rent_box_height);
+    width: var(--rent_box_width);
+    border-radius: 3px;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.rent_box img{
+    height:calc(var(--rent_box_height)/1.2) ;
+    width:calc(var(--rent_box_width)/1.5) ;
+    object-fit: cover;
+    border-radius: 0 3px 3px 3px;
+}
+
+.rent_box .sides_img img , .rent_box .sides_img .img2 img ,.n_im_2{
+    position:absolute;
+    height:calc(var(--rent_box_height)/2.4) ;
+    width:calc(var(--rent_box_width)/3) ;
+}
+.rent_box .sides_img .img1{
+    transform : translate(calc(var(--rent_box_width)/1.5) , calc( -4px - calc(var(--rent_box_height)/1.2))  );
+}
+.rent_box .sides_img .img2 img , .n_im_2{
+    transform : translate( calc(var(--rent_box_width)/1.5) , calc(-4px - calc(var(--rent_box_height)/2.4))  );
+}
+.n_im_2{
+background : #00000088;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    color : white;
+    font-weight: 400;
+}
+
+.rent_box .rent_title{
+position: absolute;
+transform : translate(0 , calc( 18px - calc(var(--rent_box_height)))  );
+padding : 5px 10px;
+border-radius: 3px 3px 0 0 ;
+background-color: var(--primary);
+font-size: var(--font-BUTTON-SIZE);
+}
+.rent_box .rent_price{
+    position: absolute;
+    transform: translate(calc(var(--rent_box_width) - 120%) , 10px);
+    color: rgb(0, 101, 0);
+    font-size: var(--font-BUTTON-SIZE);
+}
+.rent_box .rent_disc{
+    position: absolute;
+    max-width: calc(var(--rent_box_width) / 1.5);
+    margin : 6px 0 0 8px ;
+    display : -webkit-box ;
+    -webkit-line-clamp: 2 ;
+    -webkit-box-orient :vertical;
+    overflow:hidden;
+    font-size: var(--font-PARA-SIZE);
+}
+.rent_box .rent_msg{
+    position: absolute;
+    text-align: center;
+    transform: translate(calc(var(--rent_box_width) - 115%) ,calc( var(--rent_box_height) / 1.3)); 
+    font-size: var(--font-PARA-SIZE);
+    
+}
+@media (min-width:950px) {
+    :root{
+        --rent_box_width: 400px;
+        --rent_box_height: 320px;
+    }
+}
+@media (max-width:950px) {
+    .rent_box .rent_title{
+    transform : translate(0 , calc( 15px - calc(var(--rent_box_height)))  );
+    }
+    .rent_box .rent_msg{
+        transform: translate(calc(var(--rent_box_width) - 115%) ,calc( var(--rent_box_height) / 1.2)); 
+    }
+
+    .rent_box{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    } 
+}
