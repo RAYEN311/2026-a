@@ -5,12 +5,13 @@ import "../Components/comp_hub_0/styles/sudo_button.css"
 import { Link } from 'react-router-dom';
 import LogoCopy from "../Components/comp_hub_0/logoCopy";
 
+const APP_URL = (import.meta.env.VITE_APP_URL || '').replace(/\/$/, '');
 
 export default function Login(){
         const [email, setEmail] = useState('');
         const [password, setPassword] = useState('');
         
-        const [loginUrl,setloginurl] = useState('http://localhost:8000/api/login')
+  const loginUrl = `${APP_URL}/api/login`
 
 
        let good_con = () =>{

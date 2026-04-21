@@ -27,7 +27,6 @@ export default function Sells_boxe(porps){
             // right_container.style.cssText = 'transform:translate(calc( 0px - var(--right_slid) ))'
             right_container.style.cssText = 'transform:translate(0)'
             right_container.style.boxShadow = ' -3000px 0 10px 3000px rgba(0, 0, 0, 0.3)';
-            html.style.overflowY = 'hidden'
             img_devidor.style.backgroundImage = `url(${img_link})`
         }
         return(

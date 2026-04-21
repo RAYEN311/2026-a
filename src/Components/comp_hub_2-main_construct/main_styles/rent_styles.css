@@ -46,13 +46,19 @@ transform : translate(0 , calc( 18px - calc(var(--rent_box_height)))  );
 padding : 5px 10px;
 border-radius: 3px 3px 0 0 ;
 background-color: var(--primary);
-font-size: var(--font-BUTTON-SIZE);
+font-size: 18px;
+font-weight: 700;
+letter-spacing: -0.3px;
+line-height: 1.4;
+color: #1a202c;
 }
 .rent_box .rent_price{
     position: absolute;
     transform: translate(calc(var(--rent_box_width) - 120%) , 10px);
-    color: rgb(0, 101, 0);
-    font-size: var(--font-BUTTON-SIZE);
+    color: #dc2626;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
 }
 .rent_box .rent_disc{
     position: absolute;
@@ -62,7 +68,11 @@ font-size: var(--font-BUTTON-SIZE);
     -webkit-line-clamp: 2 ;
     -webkit-box-orient :vertical;
     overflow:hidden;
-    font-size: var(--font-PARA-SIZE);
+    font-size: 14px;
+    font-weight: 500;
+    color: #4b5563;
+    line-height: 1.5;
+    letter-spacing: -0.2px;
 }
 .rent_box .rent_msg{
     position: absolute;

@@ -15,6 +15,7 @@ import { def_lang } from "../../views/home";
 
 import lang_map from '../../lang_map.json';
 import { getCookie } from "../../cookie";
+import { modesbrcont } from "./main";
 // 
 
 
@@ -23,6 +24,11 @@ export default function Drawer() {
 
 
     const { dl, setdl } = useContext(def_lang)
+    const { setSelectedCategory, selectedCategory } = useContext(modesbrcont)
+
+    const handleCategoryClick = (categoryName) => {
+        setSelectedCategory(categoryName);
+    };
 
 
 
@@ -130,7 +136,7 @@ export default function Drawer() {
             <div className="categories">
                 <span>categories</span>
             </div>
-            <Categories />
+            <Categories onCategoryClick={handleCategoryClick} selectedCategory={selectedCategory} />
 
         </section>
     )

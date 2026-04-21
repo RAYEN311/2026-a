@@ -7,6 +7,8 @@ import "../Components/comp_hub_0/styles/sudo_button.css"
 
 import LogoCopy from "../Components/comp_hub_0/logoCopy";
 
+const APP_URL = (import.meta.env.VITE_APP_URL || '').replace(/\/$/, '');
+
 export default function Register(){
     const [name, setName] = useState('');
     const [email, setEmail] = useState('');
@@ -15,7 +17,7 @@ export default function Register(){
     const [passwordConfirm, setPasswordConfirm] = useState('');
     const handleRegister = () => {
       // Send login credentials to your API using axios
-        axios.post('http://localhost:8000/api/register', {
+        axios.post(`${APP_URL}/api/register`, {
         name :name,
         email: email,
         phone:phone ,

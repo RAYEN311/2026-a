@@ -3,6 +3,8 @@ import './main_styles/rent_styles.css'
 
 import { def_lang } from "../../views/home";
 
+const APP_URL = (import.meta.env.VITE_APP_URL || '').replace(/\/$/, '');
+
 
 export default function Rents_boxe(porps) {
 
@@ -26,7 +28,6 @@ export default function Rents_boxe(porps) {
         // right_container.style.cssText = 'transform:translate(calc( 0px - var(--right_slid) ))'
         right_container.style.cssText = 'transform:translate(0)'
         right_container.style.boxShadow = ' -3000px 0 10px 3000px rgba(0, 0, 0, 0.137)';
-        html.style.overflowY = 'hidden'
         img_devidor.style.backgroundImage = `url(${img_link})`
     }
 
@@ -37,7 +38,7 @@ export default function Rents_boxe(porps) {
             <div className="sides_img">
             <img src={img_link} className="img1" alt={title} />
             <div className="img2">
-            <img src={"http://localhost:8000/storage/" + img_link} alt={title} />
+            <img src={`${APP_URL}/storage/${img_link}`} alt={title} />
             <div id="n_im_2" className="n_im_2"> +4 </div>
             </div>
             </div>

@@ -33,6 +33,12 @@
     background-color: var(--burger_col);
 }
 
-.subcategories .subcategorie:active {
-    background-color: black;
+.subcategories .subcategorie.selected {
+    background-color: var(--second);
+    color: white;
+}
+
+.subcategories .subcategorie.selected:hover {
+    background-color: var(--second);
+    opacity: 0.8;
 }

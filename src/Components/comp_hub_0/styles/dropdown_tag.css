@@ -55,8 +55,28 @@
   display: none;
   position: absolute;
   width: 37vw;
-  background-color: #000022;
+  background-color: #020012;
   min-height: 50px;
   opacity: 0;
   border-radius: 3px;
+}
+.undermainindi_container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px; 
+  padding-bottom: 20px; 
+  gap: 13px;
+  flex-wrap: wrap;
+}
+.undermainindi_container .brand{
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 5px;
 }

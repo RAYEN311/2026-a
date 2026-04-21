@@ -93,29 +93,33 @@
 }
 
 .sell_title {
-    font-size: 1rem;
-    font-weight: 700;
-    color: #111827;
-    line-height: 1.3;
-    margin:30px 0 10px 0;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #1a202c;
+    line-height: 1.4;
+    margin:30px 0 0px 0;
+    letter-spacing: -0.3px;
 }
 
 .sell_price {
-    font-size: 1.15rem;
-    font-weight: 800;
-    color: #dc2626;
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #2693dc;
     margin-left: auto;
+    letter-spacing: -0.6px;
 }
 
 .sell_disc {
     color: #4b5563;
-    font-size: 0.94rem;
+    font-size: 0.9rem;
     line-height: 1.6;
+    font-weight: 500;
     max-height: 4.8em;
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    letter-spacing: -0.2px;
 }
 
 .sell_box > .sell_title,
@@ -139,43 +143,49 @@
 
 @media (max-width: 650px) {
     .sell_box::after,
-.sell_box::before {
-    top: 250px;
-  z-index: 1;
-}
+    .sell_box::before {
+        top: auto;
+        bottom: 8px;
+        z-index: 1;
+    }
     .sell_box {
-        height: 400px;
+        height: auto;
         display: grid;
-        grid-template-columns: 0;
-        grid-template-rows: 200px    50px auto ;
-        gap: 10px;
-        padding: 14px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 220px auto auto auto;
+        gap: 8px;
+        padding: 0 0 14px 0;
+        overflow: hidden;
     }
 
     .sell_images {
-        position: absolute;
+        position: relative;
         grid-column: 1;
         grid-row: 1;
-        width: 97%;
+        width: 100%;
         height: 220px;
+        border-radius: 8px 8px 0 0;
+    }
+
+    .sell_box > .sell_title,
+    .sell_box > .sell_disc,
+    .sell_box > .sell_price {
+        grid-column: 1;
+        padding: 0 14px;
     }
 
     .sell_title {
-        grid-column: 1;
         grid-row: 2;
-
+        margin: 10px 0 0 0;
     }
-    
+
     .sell_disc {
-        grid-column: 1;
         grid-row: 3;
-
     }
-    
+
     .sell_price {
-        grid-column: 1;
         grid-row: 4;
-        margin-top: 0;
+        margin-top: 4px;
         margin-left: 0;
         width: 100%;
     }
